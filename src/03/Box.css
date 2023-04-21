@@ -1,0 +1,6 @@
+#a1 {
+    display: inline-flex;
+    width: 90%;
+    justify-content: right;
+    /* border: 1px solid red; */
+}

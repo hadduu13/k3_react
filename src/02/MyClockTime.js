@@ -1,6 +1,5 @@
 const MyClockTime = () => {
 
-    // let myTime = new Date().toLocalTimeString();
     let myTime = new Date().toLocaleTimeString();
 
     return (
