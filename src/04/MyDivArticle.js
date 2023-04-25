@@ -24,7 +24,7 @@ import {useState} from 'react';
         console.log(cnt)
 
     }
-    console.log(n);
+    //console.log(n);
     return (
         <article>
             <header><h1 className={style.mah1}>{aname || 'MyDiv0'}</h1></header>
