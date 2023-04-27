@@ -2,11 +2,13 @@ import { useState } from "react";
 
 const MyClockTime = () => {
 
-    let t = new Date().toLocaleTimeString();
-    const[myTime, SetMyTime] = useState(0);
-
-    let cnt = 0;
-    setTimeout(console.log(++cnt), 1000);
+    //let myTime = new Date().toLocaleTimeString();
+    //state변수 선언
+    const[myTime, setMyTime] = useState(new Date().toLocaleTimeString());
+    //1초에 한 번씩 state변수 변경
+    setInterval(()=>{
+        setMyTime(new Date().toLocaleTimeString());
+    }, 1000);
 
     return (
         <footer>
