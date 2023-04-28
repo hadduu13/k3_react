@@ -7,7 +7,7 @@ import '../04/MyDiv.css';
 import {useState} from 'react';
 
 //const MyDivArticle = (probs) => {
-//매개변수를 probs 사용ㅎ지 않고 오브젝트에 매개변수명을 넣어서 사용
+//매개변수를 probs 사용하지 않고 오브젝트에 매개변수명을 넣어서 사용
 
     const MyDivArticle = ({aname}) => {
     // const aname = probs.aname;
