@@ -60,7 +60,7 @@ const Frcst = () => {
         <main className='container'>
             <article>
                 <header className={style.a1}>
-                    <h1>초미세먼지 주간예보☁</h1>
+                    <h1>☁초미세먼지 주간예보☁</h1>
                     </header>    
                     <div className='grid'>
                      {dtTag}
