@@ -1,6 +1,8 @@
 import Tdata from './dataTaccident.json';
+import TaccidentDetail from './TaccidentDetail';
 import TaccidentNav1 from "./TaccidentNav1";
 import TaccidentNav2 from "./TaccidentNav2";
+import style from "./Taccident.module.css";
 import {useState, useEffect} from 'react';
 
 const Taccident = () => {
@@ -25,23 +27,23 @@ const Taccident = () => {
     useEffect(() => {
         console.log('Taccident sel2 useEffect', sel2)
         let temp = data.filter((item) => item.사고유형_대분류 === sel2[0] && item.사고유형_중분류 === sel2[1]);
+        console.log(temp);
         setSelData(temp[0]);
-    }, [sel1]);
+    }, [sel2]);
 
     useEffect(() => {
         console.log('Taccident selData useEffect', selData)
         if(selData !== undefined) {
             const result = [selData.사고건수, selData.사망자수, selData.중상자수, selData.경상자수, selData.부상신고자수];
             console.log('result', result)
-        }
-        
-      
+        }   
     }, [selData])
 
     useEffect(() => {
         console.log('Taccident sel1 useEffect', sel1)
         console.log('Taccident sel2 useEffect', sel2)
-    });
+    }); 
+
 
      
 
@@ -52,11 +54,7 @@ const Taccident = () => {
                     <TaccidentNav1 c1 = {c1} sel1 = {sel1} setSel1 = {setSel1} />
                     <TaccidentNav2 c2 = {c2} sel1 = {sel1} sel2 = {sel2} setSel2 = {setSel2} />
                 </header>
-                <footer>
-                    <div className="grid">
-                       
-                    </div>
-                </footer>
+                {selData && <TaccidentDetail selData = {selData} />}
             </article>
         </main>
     );

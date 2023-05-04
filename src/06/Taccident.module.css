@@ -1,0 +1,27 @@
+.d1 {
+    display: flex;
+    background-color: #DDFFBB;
+    justify-content: center;
+    height: 50px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.d2 {
+    display: flex;
+    background-color: #C7E9B0;
+    justify-content: center;
+    height: 50px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.d1:hover {
+    background-color: #395144;
+
+}
+
+.d2:hover {
+    background-color: #B3C99C;
+
+}

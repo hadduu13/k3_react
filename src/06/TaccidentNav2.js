@@ -1,4 +1,4 @@
-
+import style from './Taccident.module.css';
 
 const TaccidentNav2 = ({c2, sel1, sel2, setSel2}) => {
 
@@ -12,7 +12,7 @@ const TaccidentNav2 = ({c2, sel1, sel2, setSel2}) => {
     const btTag = c2Arr.map((item) => 
     
     <li key={item}>
-        <button onClick={() => setSel2(item)}>{item[1]}</button>
+        <button className={style.d2} onClick={() => setSel2(item)}>{item[1]}</button>
     </li>
     
     );
