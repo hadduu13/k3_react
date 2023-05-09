@@ -7,7 +7,8 @@ const BoxRows = ({mv}) => {
     //클릭된 자료 확인
     const showMv = (row)=>{
         console.log(row);
-        let tempTag = `[${row.movieCd}] ${row.movieNm}, Release Date : ${row.openDt}`
+        let tempTag = `[${row.movieCd}] ${row.movieNm}, Released
+         Date : ${row.openDt}`
         //백틱(``)은 여러개의 문자열을 한 번에 넣어줄 수 있다
         setLineTag(tempTag);
     }

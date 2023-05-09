@@ -22,7 +22,7 @@ const BoxRows = ({ mv }) => {
             <tr className="mytr" key={row.movieCd} onClick={() => showMv(row)}>
                 <td>{row.rank}</td>
                 <td>{row.movieNm}</td>
-                <td><span  id="a1">{parseInt(row.salesAmt).toLocaleString() + '원'}</span></td>
+                <td><span id="a1">{parseInt(row.salesAmt).toLocaleString() + '원'}</span></td>
                 <td>{icon}{intent == 0? '': Math.abs(intent)}</td>
             </tr>
         );
