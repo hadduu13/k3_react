@@ -16,3 +16,13 @@
         background-color: #BA90C6;
         color: #FDF4F5;
 }
+
+.a1, .a2 {
+    border-color: #BA90C6;
+    background-color: #BA90C6;
+    color: #FDF4F5;
+}
+
+.text {
+    border-color: #BA90C6;
+}

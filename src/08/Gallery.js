@@ -93,10 +93,10 @@ const Gallery = () => {
                     <h1>한국관광공사 관광사진 정보</h1>
                 </header>
                 <div className="grid">
-                    <input ref={txt1} type ='text' name = "txt1" placeholder="키워드를 입력하세요." required/>
+                    <input ref={txt1} type ='text' name = "txt1" className={style.text} placeholder="키워드를 입력하세요." required/>
                     <div className={style.btDiv}>
-                        <button onClick={(e) => show(e)}>확인</button>
-                        <button onClick={(e) => showClear(e)}>취소</button>
+                        <button className={style.a1} onClick={(e) => show(e)}>확인</button>
+                        <button className={style.a2} onClick={(e) => showClear(e)}>취소</button>
                     </div>
                 </div>
                 <div>
